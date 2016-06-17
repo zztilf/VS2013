@@ -1,0 +1,15 @@
+﻿@{
+    var name = new string[]{"Jack", "Tom", "Rose"};
+}
+<html>
+    <head><title>视图示例</title></head>
+    <body>
+        <h1>列出 @name.Length 个名字。</h1>
+        <ul>
+            @foreach (var item in name)
+            {
+                <li>这个名字是：@item</li>
+            }
+        </ul>
+    </body>
+</html>
